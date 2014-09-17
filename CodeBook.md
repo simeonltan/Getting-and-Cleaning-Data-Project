@@ -1,4 +1,4 @@
-Code book
+Code Book
 
 The data set is obtained from "Human Activity Recognition Using Smartphones Dataset Version 1.0".  
 The URL is:

@@ -4,8 +4,7 @@ To run this R code, you will need to make sure that the Samsung data is unzipped
 The Samsung data can be downloaded from 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-Use the following command in RStudio to run the code:
-source("run_analysis.R")
+Use the following command in RStudio to run the code: source("run_analysis.R")
 
 The following explains what run_analysis.R do:
 
