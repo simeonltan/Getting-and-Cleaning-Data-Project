@@ -4,6 +4,7 @@ Code Book
 The data set is obtained from "Human Activity Recognition Using Smartphones Dataset Version 1.0".  
 The URL is:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
 The data for the project is downloaded from:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
@@ -18,47 +19,35 @@ For each record, the following is provided:
 ===========================================
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
-
 - Triaxial Angular velocity from the gyroscope. 
-
 - A 561-feature vector with time and frequency domain variables. 
-
 - Its activity label. 
-
 - An identifier of the subject who carried out the experiment.
 
-The dataset includes the following files:
+The dataset used are the following files:
 =========================================
 
-- 'README.txt'
-- 'features_info.txt': Shows information about the variables used on the feature vector.
 - 'features.txt': List of all features.
 - 'activity_labels.txt': Links the class labels with their activity name.
 - 'train/X_train.txt': Training set.
 - 'train/y_train.txt': Training labels.
 - 'test/X_test.txt': Test set.
 - 'test/y_test.txt': Test labels.
-
-The following files are available for the train and test data. Their descriptions are equivalent. 
-
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
-
-- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
-
-- 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
-
-- 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
+- 'test/subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
 
 The following summaries were made:
-=========================================
+==================================
 
-1. Merges the training and the test sets to create one data set.
-
-2. Extracts only the measurements on the mean and standard deviation for each measurement. 
-
-3. Uses descriptive activity names to name the activities in the data set.
-
-4. Appropriately labels the data set with descriptive variable names.
-
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. The training and the test sets are merged to create one data set.
+2. Only the measurements on the mean and standard deviation for each measurement are extracted.
+3. Descriptive activity names from activity_labels.txt were used to name the activities in the data set. They are as follows:
+- WALKING
+- WALKING_UPSTAIRS
+- WALKING_DOWNSTAIRS
+- SITTING
+- STANDING
+- LAYING
+4. The features.txt file was used as a base to labels the data set with descriptive variable names.
+5. An independent tidy data set was created with the average of each variable for each activity and each subject.  The tidy data set is named "tidy.txt".  As there were 30 subjects and 6 unique activities, the resulting summary data set 180 rows of data.

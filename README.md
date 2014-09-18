@@ -1,8 +1,24 @@
-This is a guide to the run_analysis.R code.
+Introduction
+============
+
+The purpose of this project is to demonstrate the ability to collect, work with, and clean a data set. The goal is to prepare tidy data that can be used for later analysis. 
+
+The following are the output of this project:
+1) a tidy data set - "tidy.txt"
+2) this Github repository with the script for performing the analysis called 'run_analysis.R'.
+3) a code book that describes the variables, the data, and any transformations or work that was performed to clean up the data called CodeBook.md.
+4) This README.md is also part of the output of the project. It explains how all of the scripts work and how they are connected.  
+
+
+This is a guide to run_analysis.R
+=================================
 
 To run this R code, you will need to make sure that the Samsung data is unzipped and in the working directory.  
 The Samsung data can be downloaded from 
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+After unzipping the file, you will have a directory 'UCI HAR Dataset' with two subdirectories:
+- test
+- train
 
 Use the following command in RStudio to run the code: source("run_analysis.R")
 
