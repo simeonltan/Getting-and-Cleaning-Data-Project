@@ -41,13 +41,13 @@ The following summaries were made:
 ==================================
 
 1. The training and the test sets are merged to create one data set.
-2. Only the measurements on the mean and standard deviation for each measurement are extracted.
+2. Only the measurements on the mean and standard deviation for each measurement are extracted. A total of 66 measurements were extracted.
 3. Descriptive activity names from activity_labels.txt were used to name the activities in the data set. They are as follows:
-- WALKING
-- WALKING_UPSTAIRS
-- WALKING_DOWNSTAIRS
-- SITTING
-- STANDING
-- LAYING
+ - WALKING
+ - WALKING_UPSTAIRS
+ - WALKING_DOWNSTAIRS
+ - SITTING
+ - STANDING
+ - LAYING
 4. The features.txt file was used as a base to labels the data set with descriptive variable names.
 5. An independent tidy data set was created with the average of each variable for each activity and each subject.  The tidy data set is named "tidy.txt".  As there were 30 subjects and 6 unique activities, the resulting summary data set 180 rows of data.
